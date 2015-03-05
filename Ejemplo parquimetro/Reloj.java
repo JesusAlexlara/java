@@ -16,4 +16,12 @@ public class Reloj
         return(cadena);
     }
     
+    public void setHoraMinuto(int datoH, int datoM){
+        horas.setValor(datoH);
+        minutos.setValor(datoM);
+    }
+    
+    public void incMin() {
+        minutos.incValor();
+    }
 }
