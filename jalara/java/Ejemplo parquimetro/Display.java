@@ -10,9 +10,11 @@ public class Display{
     public void setValor(int dato){
         valor = dato;
     }
+    
     public void setLimite(int dato){
         limite = dato;
     }
+    
     public String toString(){
         if(valor < 10){
             return "0"+valor;
@@ -20,5 +22,13 @@ public class Display{
         else{
             return ""+valor;
         }
+    }
+    
+    public int getValor(){
+        return(valor);
+    }
+    
+    public void incValor(){
+        valor ++;
     }
 }
