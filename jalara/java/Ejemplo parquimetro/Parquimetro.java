@@ -36,5 +36,9 @@ public class Parquimetro
         }   
         return(bole);
     }
+    
+    public void FormatoHora(){
+        time.cambiaFormato();
+    }
 
 }
