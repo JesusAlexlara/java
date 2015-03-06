@@ -1,8 +1,8 @@
 public class Parquimetro
 {
     private Reloj time;
-    private int costoXhora;
-    private int saldoActual;
+    private float costoXhora;
+    private float saldoActual;
 
     public Parquimetro() {
         time = new Reloj();
@@ -20,18 +20,18 @@ public class Parquimetro
     
     public Boleto dameBoleto(){
         Boleto bole = new Boleto();
-        int minutos=0;
-        int i=0;
+        float minutos=0f;
+        Double y1;
+        float i=0;
         String t1;
         
         if(saldoActual > 0){
             time.ponerHoraActual();
             t1 = time.toString();
-            minutos = saldoActual/costoXhora*60;
-            while(i<minutos){
+            minutos = (((float)saldoActual)/((float)costoXhora))*60f;
+            for(i = 0f; i<minutos; i++)
+            {
                 time.incMin();
-                System.out.println(i);
-                i++;
             }
             saldoActual = 0;
             bole.setHoraInicioFin(t1,time.toString());
@@ -42,6 +42,11 @@ public class Parquimetro
         }
         return(bole);
     }
+    
+    
+    
+    
+   
     
     public void FormatoHora(){
         time.cambiaFormato();
