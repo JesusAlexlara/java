@@ -61,7 +61,11 @@ public class Reloj
         if(horas.getValor() > 12){
             aux = horas.getValor() - 12;
         }
-        cadena = aux + "";
+        if(aux < 10){
+            cadena = "0"+aux + "";
+        }
+        else
+            cadena = aux+"";
         
         return(cadena);
     }

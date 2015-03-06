@@ -20,20 +20,26 @@ public class Parquimetro
     
     public Boleto dameBoleto(){
         Boleto bole = new Boleto();
-        int minutos, cont=0;
+        int minutos=0;
+        int i=0;
         String t1;
         
         if(saldoActual > 0){
             time.ponerHoraActual();
             t1 = time.toString();
             minutos = saldoActual/costoXhora*60;
-            while(cont != minutos){
+            while(i<minutos){
                 time.incMin();
-                cont++;
+                System.out.println(i);
+                i++;
             }
             saldoActual = 0;
             bole.setHoraInicioFin(t1,time.toString());
-        }   
+            
+        }
+        else{
+            System.out.println("no hay dinero");
+        }
         return(bole);
     }
     
