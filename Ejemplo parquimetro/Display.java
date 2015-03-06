@@ -29,6 +29,9 @@ public class Display{
     }
     
     public void incValor(){
-        valor ++;
+        valor++;
+        if(valor >= limite){
+            valor = 0;
+        }
     }
 }

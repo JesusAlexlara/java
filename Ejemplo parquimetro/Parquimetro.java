@@ -1,33 +1,40 @@
-
-/**
- * Write a description of class Parquimetro here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Parquimetro
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private Reloj time;
+    private int costoXhora;
+    private int saldoActual;
 
-    /**
-     * Constructor for objects of class Parquimetro
-     */
-    public Parquimetro()
-    {
-        // initialise instance variables
-        x = 0;
+    public Parquimetro() {
+        time = new Reloj();
+        costoXhora = 0;
+        saldoActual = 0;
+    }
+    
+    public void setCostoxHora(int dato) {
+        costoXhora = dato;
+    }
+    
+    public void aceptaDinero(int dato){
+        saldoActual += dato;
+    }
+    
+    public Boleto dameBoleto(){
+        Boleto bole = new Boleto();
+        int minutos, cont=0;
+        String t1;
+        
+        if(saldoActual > 0){
+            time.ponerHoraActual();
+            t1 = time.toString();
+            minutos = saldoActual/costoXhora*60;
+            while(cont != minutos){
+                time.incMin();
+                cont++;
+            }
+            saldoActual = 0;
+            bole.setHoraInicioFin(t1,time.toString());
+        }   
+        return(bole);
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
 }
