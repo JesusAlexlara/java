@@ -34,11 +34,13 @@ public class Parquimetro
             }
             saldoActual = 0;
             bole.setHoraInicioFin(t1,time.toString());
+            return(bole);
         }
         else{
             System.out.println("no hay dinero");
+            return(null);
         }
-        return(bole);
+        
     }
      
     public void FormatoHora(){
