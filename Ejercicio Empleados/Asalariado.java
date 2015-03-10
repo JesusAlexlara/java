@@ -13,7 +13,7 @@ public class Asalariado extends Empleado
         salario = unSalario;
     }
     
-    public void calculaSalario(){
+    public void calcularSuelo(){
         sueldo = salario;
     }
 }
