@@ -2,8 +2,7 @@ public class Empleado extends Object
 {
     protected float sueldo;
     
-    public Empleado()
-    {
+    public Empleado(){
         sueldo = 0;
     }
 }
