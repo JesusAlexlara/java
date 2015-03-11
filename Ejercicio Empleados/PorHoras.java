@@ -8,13 +8,14 @@ public class PorHoras extends Empleado
         costoHora = cosH;
     }
     
-    public void calcularSuelo(){
+    public float calcularSuelo(){
         int hExtra = 0;
         if(numHoras > 40){
             hExtra = numHoras - 40;
         }
         sueldo = numHoras*costoHora+(costoHora*2)*(hExtra);
-            
+        
+        return(sueldo);    
     }
         
 }
