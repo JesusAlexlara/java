@@ -13,7 +13,8 @@ public class Asalariado extends Empleado
         salario = unSalario;
     }
     
-    public void calcularSuelo(){
+    public float calcularSuelo(){
         sueldo = salario;
+        return(sueldo);
     }
 }
