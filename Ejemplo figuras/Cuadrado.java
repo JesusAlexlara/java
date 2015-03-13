@@ -2,17 +2,13 @@
 public class Cuadrado extends Figura
 {
     private int lado;
-    public Cuadrado()
+    public Cuadrado(int unNumero)
     {
         super();
-        lado = 0;
-    }
-
-    public void DarLado(int unNumero){
         lado = unNumero;
     }
     
     public void CalculaArea(){
-        area = lado*4;
+        area = (float)(lado*4);
     }
 }
