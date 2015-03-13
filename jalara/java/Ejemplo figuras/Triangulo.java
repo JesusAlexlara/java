@@ -2,23 +2,15 @@ public class Triangulo extends Figura
 {
     private int base;
     private int altura;
-    public Triangulo()
+    public Triangulo(int b, int a)
     {
         super();
-        base = 0;
-        altura = 0;
-    }
-    
-    public void DarBase(int unNumero){
-        base = unNumero;
-    }
-    
-    public void DarAltura(int unNumero){
-        altura = unNumero;
+        base = b;
+        altura = a;
     }
     
     public void CalculaArea(){
-        area = base * altura / 2;
+        area = (float)(base * altura / 2);
     }
 
 }

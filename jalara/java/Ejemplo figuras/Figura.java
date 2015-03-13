@@ -7,15 +7,19 @@
  */
 public class Figura
 {
-    protected int area;
+    protected float area;
     
     public Figura()
     {
         area = 0;
     }
     
-    public void ImprimeArea(){
-        String nombre = getClass().getName();
-        System.out.println("el area del "+nombre+" es "+area);
+    public String toString(){
+        String cadena = "El área del "+getClass().getName()+" es "+ area;
+        return(cadena);
+    }
+    
+    public void CalculaArea(){
+        System.out.println("YOLO");
     }
 }
