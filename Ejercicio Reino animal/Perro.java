@@ -7,39 +7,30 @@
  */
 public class Perro extends Mamifero
 {
-    private int ladraMucho;
+    private boolean ladraMucho;
     
     public Perro(){
-        ladraMucho = 0;
     }
     
     public void SeRuidoso(){
-        ladraMucho = 2;
+        ladraMucho = true;
         
     }
     
     public void SeCallado(){
-        ladraMucho = 1;
+        ladraMucho = false;
     }
     
     public void Ladra(){
-        if(ladraMucho==2){
-            Responde("Bow wow wow, Bow, wow");
-        }
-        else{
-            if(ladraMucho==1){
-                Responde("Woof");
-            }
-        }
+        if(ladraMucho)
+            this.Responde("Woof woof Woof woof");
+        else
+            this.Responde("woof");
+      
     }
     
     public void Habla(){
-        if(ladraMucho==1){
-            super.Habla();
-        }
-        else{
-            Ladra();
-        }
+        this.Ladra();
     }
 
 }
