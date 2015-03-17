@@ -7,8 +7,9 @@
  */
 public class Pinguino extends Ave
 {
-    public Pinguino()
+    public Pinguino(String ani)
     {
+        super(ani);
         
     }
 }

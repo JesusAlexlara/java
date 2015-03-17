@@ -9,7 +9,8 @@ public class Perro extends Mamifero
 {
     private boolean ladraMucho;
     
-    public Perro(){
+    public Perro(String ani){
+        super(ani);
     }
     
     public void SeRuidoso(){

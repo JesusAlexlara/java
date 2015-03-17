@@ -1,10 +1,10 @@
 public class Animal
 {
     
-    protected String nombre;
+    private String nombre;
     
-    public void Nombre(String unNombre){
-        nombre = unNombre;
+    public Animal(String cadena){
+        nombre = cadena;
     }
     
     public void Responde(String unaCadena){
