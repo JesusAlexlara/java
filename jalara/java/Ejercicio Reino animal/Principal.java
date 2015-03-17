@@ -12,15 +12,15 @@ public class Principal
         
         animales = new LinkedList<Animal>();
         Ballena balle = new Ballena();
-        balle.Nombre("willy");
+        balle.Nombre("Willy");
         Perro dogo = new Perro();
-        dogo.Nombre("Scooby");
+        dogo.Nombre("Chewbacca");
         dogo.SeRuidoso();
         Pinguino pingu = new Pinguino();
         pingu.Nombre("Tux");
         Loro lod = new Loro();
         lod.Nombre("Pablito");
-        lod.Vocabulario("Pablito clavo un clavito");
+        lod.Vocabulario("Tumbacutiricutambacutiricutatumbacutiricuta");
         
         animales.add(balle);
         animales.add(dogo);
@@ -29,7 +29,6 @@ public class Principal
         
         for(Animal ani: animales){
             ani.Habla();
-            //System.out.println(ani);
         }
     }
 }
