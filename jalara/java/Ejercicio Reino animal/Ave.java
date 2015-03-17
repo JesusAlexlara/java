@@ -7,5 +7,8 @@
  */
 public class Ave extends Animal
 {
+    public Ave(String an){
+        super(an);
+    }
  
 }

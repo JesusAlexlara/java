@@ -7,7 +7,8 @@
  */
 public class Mamifero extends Animal
 {
-    public Mamifero()
-    {
+    public Mamifero(String nom){
+        super(nom);
     }
+    
 }

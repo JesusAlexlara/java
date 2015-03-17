@@ -3,7 +3,8 @@ public class Loro extends Ave
     // instance variables - replace the example below with your own
     private String vocabulario;
     
-    public Loro(){
+    public Loro(String ani){
+        super(ani);
         vocabulario = null;
     }
     
