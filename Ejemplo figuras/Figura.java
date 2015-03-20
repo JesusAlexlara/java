@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Figura
+abstract public class Figura
 {
     protected float area;
     
@@ -19,7 +19,5 @@ public class Figura
         return(cadena);
     }
     
-    public void CalculaArea(){
-        System.out.println("YOLO");
-    }
+    abstract public void CalculaArea();
 }
