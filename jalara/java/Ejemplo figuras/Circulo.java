@@ -11,11 +11,12 @@ public class Circulo extends Figura
     
     public Circulo(Double ra)
     {
+        super();
         radio = ra;
     }
     
-    public void CarculaArea(){
+    public void CalculaArea(){
         area = (float)(3.1416*(radio*radio));
     }
-    
+   
 }
