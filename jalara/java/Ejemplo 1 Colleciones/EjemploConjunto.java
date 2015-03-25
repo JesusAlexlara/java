@@ -3,13 +3,21 @@ public class EjemploConjunto{
     
     public static void main(String []args){
         Set conjunto = new HashSet();
-        conjunto.add("one");
-        conjunto.add("second");
-        conjunto.add("3ed");
-        conjunto.add(new Integer(4));
-        conjunto.add(new Float(5.0f));
-        conjunto.add("second");
-        conjunto.add(new Integer(4));
+        List lista = new LinkedList();
+        
+        conjunto.add(new Estudiante("Sergio", 2013));
+        conjunto.add(new Estudiante("Oscar", 2013));
+        conjunto.add(new Estudiante("Yarazet", 2011));
+        conjunto.add(new Estudiante("Sergio", 2013));
+        conjunto.add(new Estudiante("Oscar", 2013));
         System.out.println(conjunto);
+        
+        lista.add(new Estudiante("Sergio", 2013));
+        lista.add(new Estudiante("Oscar", 2013));
+        lista.add(new Estudiante("Yarazet", 2011));
+        lista.add(new Estudiante("Sergio", 2013));
+        lista.add(new Estudiante("Oscar", 2013));
+        System.out.println(lista);
+        
     }
 }
