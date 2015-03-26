@@ -2,7 +2,7 @@ import java.util.*;
 public class EjemploConjunto{
     
     public static void main(String []args){
-        Set conjunto = new HashSet();
+        Set conjunto = new TreeSet();
         List lista = new LinkedList();
         
         conjunto.add(new Estudiante("Sergio", 2013));
